@@ -43,3 +43,16 @@ function assignNumbers() {
         numbers.push(num2);
     return numbers;
 }
+
+function buildDisplay() {
+    var divToAdd = document.querySelector(".number-container");
+    nums.forEach(function (num){
+        var element = document.createElement('h2');
+        element.textContent = num;
+        divToAdd.appendChild(element);
+    });
+}
+
+function listener() {
+    buildDisplay();
+}
