@@ -39,3 +39,12 @@
 	display: flex;
 	justify-content: center;
 }
+
+.number-container {
+	display: flex;
+	justify-content: center;
+}
+
+.generator-button {
+	border: 1px solid red;
+}
