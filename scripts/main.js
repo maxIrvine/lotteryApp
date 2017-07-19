@@ -48,6 +48,7 @@ function buildDisplay() {
     var divToAdd = document.querySelector(".number-container");
     nums.forEach(function (num){
         var element = document.createElement('h2');
+        element.setAttribute('class', "number");
         element.textContent = num;
         divToAdd.appendChild(element);
     });
