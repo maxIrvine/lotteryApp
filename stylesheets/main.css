@@ -34,3 +34,8 @@
 	80%{color: blue;}
 	100%{color: orange;}	
 }
+
+.title, .sub-title {
+	display: flex;
+	justify-content: center;
+}
