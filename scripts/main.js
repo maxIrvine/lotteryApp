@@ -1,8 +1,5 @@
-var firstNumbers = addNumbers(69);
-var secondNumbers = addNumbers(26);
-var nums = assignNumbers();
-console.log(nums);
-
+var NUMBER_LIST = '[number-generator="list"]';
+var NUMBER_BUTTON = '[number-generator-button="trigger"]';
 
 function addNumbers(num) {
     var arr = [];
@@ -13,6 +10,8 @@ function addNumbers(num) {
 }
 
 function assignNumbers() {
+    var firstNumbers = addNumbers(69);
+    var secondNumbers = addNumbers(26);
     var numbers = []
     for (var i=1;i<=5;i++) {
         var randomDecimal = Math.random();
@@ -45,6 +44,7 @@ function assignNumbers() {
 }
 
 function buildDisplay() {
+    var nums = assignNumbers();
     var divToAdd = document.querySelector(".number-container");
     nums.forEach(function (num){
         var element = document.createElement('h2');
@@ -53,6 +53,23 @@ function buildDisplay() {
     });
 }
 
-function listener() {
-    buildDisplay();
+function clearDisplay() {
+    var divToAdd = document.querySelector(".number-container");
+    divToAdd.innerHTML = "";
 }
+
+
+function listener() {
+    var div = document.querySelector(NUMBER_LIST);
+    var numButton = document.querySelector(NUMBER_BUTTON);
+    numButton.addEventListener("click", function (){
+        clearDisplay();
+        buildDisplay();
+    });
+}
+
+function main() {
+    listener();
+}
+
+main();
