@@ -46,6 +46,7 @@
 }
 
 .generator-button {
+	margin-top: 30px;
 	border: 1px solid red;
 }
 
@@ -53,5 +54,15 @@
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
-	
+	background-color: background-image: -webkit-gradient(linear, left top, left bottom, from(grey), to(darkslategrey));
+	background-image: -webkit-linear-gradient(top, grey, darkslategrey);
+	background-image: -moz-linear-gradient(top, grey, darkslategrey);
+	background-image: linear-gradient(to bottom, grey, darkslategrey);
+}
+
+.number {
+	background: background-image: -webkit-gradient(linear, left top, left bottom, from(lightblue), to(lightcyan));
+	background-image: -webkit-linear-gradient(top, lightblue, lightcyan);
+	background-image: -moz-linear-gradient(top, lightblue, lightcyan);
+	background-image: linear-gradient(to bottom, lightblue, lightcyan);;
 }
