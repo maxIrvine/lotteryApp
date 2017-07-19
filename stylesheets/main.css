@@ -28,7 +28,8 @@
 
 /* Standar Syntax */
 @keyframes rainbow{
-	20%{color: red;}
+	10%{color: red;}
+	20%{color: cyan;}
 	40%{color: yellow;}
 	60%{color: green;}
 	80%{color: blue;}
@@ -38,6 +39,11 @@
 .title, .sub-title {
 	display: flex;
 	justify-content: center;
+}
+
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 60px;
 }
 
 .button-container {
