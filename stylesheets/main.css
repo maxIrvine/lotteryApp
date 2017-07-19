@@ -40,11 +40,18 @@
 	justify-content: center;
 }
 
-.number-container {
+.button-container {
 	display: flex;
 	justify-content: center;
 }
 
 .generator-button {
 	border: 1px solid red;
+}
+
+.number-container {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	
 }
